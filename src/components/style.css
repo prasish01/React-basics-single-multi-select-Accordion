@@ -1,0 +1,104 @@
+/* style.css */
+:root {
+  padding: 160px;
+}
+
+body {
+  background-color: #387478;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #243642;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.accordian {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.item .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.item .title:hover {
+  background-color: #e2f1e7;
+}
+
+/* This class will apply when the item is selected */
+.item .title.active {
+  background-color: #e2f1e7;
+}
+
+.item .title h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.item .title span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.item .title span.open {
+  transform: rotate(45deg);
+}
+
+.content {
+  padding: 15px 20px;
+  background-color: #e2f1e7;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.content p {
+  margin: 0;
+}
+
+/* Add styles for the button */
+.multi-select-btn {
+  background-color: #387478;
+  display: block;
+  width: 100%; /* Make button full width */
+  max-width: 300px; /* Limit maximum width */
+  margin: 0 auto 20px auto; /* Center the button and add space at the bottom */
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.multi-select-btn:hover {
+  background-color: #47b0b7;
+}
+
+.btn-active {
+  background-color: #47b0b7;
+}
